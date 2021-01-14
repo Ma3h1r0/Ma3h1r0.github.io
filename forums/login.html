@@ -1,34 +1,134 @@
-
-<!-- saved from url=(0073)ma3h1r0.github.io -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0038)https://SB.com -->
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="ROBOTS" content="NOINDEX, FOLLOW">
-<title>Info / MASHIRO</title>
-<link rel="stylesheet" type="text/css" href="./forums_files/Cobalt.css">
-<style type="text/css">.gid1 {color: #b4e61e; font-weight: bold} .gid2 {color: #ff9933; font-weight: bold} .gid4 {color: #e61515} .gid5 {color: #e61515; font-weight: bold} </style>
-<link href="./forums_files/css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="./forums_files/font-awesome.min.css">
-<script src="./forums_files/jquery.min.js"></script>
-<link rel="icon" href="https://skidsense.pub/forums/favicon.ico">
-<!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /><![endif]-->
-<style type="text/css">
-<!--
-.STYLE2 {font-size: larger}
--->
-</style>
-</head>
-<body>
-<div class="gs-divider"></div>
+	<title>Login / Mashiro</title>
+	<link rel="stylesheet" type="text/css" href="./login_files/Cobalt.min.css">
+	<link rel="stylesheet" type="text/css" href="./login_files/font-awesome.min.css">
+	<link href="./login_files/css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="./login_files/notifications.js" type="text/javascript" charset="UTF-8"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+function process_form(the_form)
+{
+	var required_fields = {
+		"req_username": "Username",
+		"req_password": "Password"
+	};
+	if (document.all || document.getElementById)
+	{
+		for (var i = 0; i < the_form.length; ++i)
+		{
+			var elem = the_form.elements[i];
+			if (elem.name && required_fields[elem.name] && !elem.value && elem.type && (/^(?:text(?:area)?|password|file)$/i.test(elem.type)))
+			{
+				alert('"' + required_fields[elem.name] + '" is a required field in this form.');
+				elem.focus();
+				return false;
+			}
+		}
+	}
+	return true;
+}
+/* ]]> */
+</script></head>
 
-<div id="punindex" class="pun">
+<body onload="document.getElementById(&#39;login&#39;).elements[&#39;req_username&#39;].focus()">
+<div id="punlogin" class="pun">
 <div class="top-box"></div>
-<h1 class="STYLE2">The login channel is not open</h1>
-<p class="STYLE2">&nbsp;</p>
-<h1 class="STYLE2"><a href="javascript: history.go(-1)">GO BACK</a> </h1>
-<p class="STYLE2">&nbsp;</p>
+<div class="punwrap">
+
+<div id="brdheader" class="block">
+	<div class="box">
+		<div id="brdtitle" class="inbox">
+			<h1><a href="https://ma3h1r0.github.io/index.html">MAS<span>HIRO</span></a></h1>
+			<div id="brddesc"></div>
+		</div>
+		<div id="brdmenu" class="inbox">
+			<ul>
+				<li id="navnotifications"><a href="https://ma3h1r0.github.io/index.html">Index</a></li>
+				<li id="navnotifications"><a href="https://ma3h1r0.github.io/forums/register.html">Register</a></li>
+				<li id="navnotifications"><a href="https://ma3h1r0.github.io/forums/login.html">Login</a></li>
+		    </ul>
+		</div>
+		<div id="notifications-container">
+			<div id="notifications-body">
+				<ul id="notifications-list"></ul>
+			</div>
+			<div id="notifications-footer">
+				<p><a id="notifications-clear" href="https://gamesense.pub/forums/login.php#">Clear</a></p>
+			</div>
+		</div>
+		<div id="brdwelcome" class="inbox">
+			<p class="conl">You are not logged in.</p>
+			<div class="clearer"></div>
+		</div>
+	</div>
+</div>
+
+
+
+<div id="brdmain">
+<div class="blockform">
+	<h2><span>Login</span></h2>
+	<div class="box">
+		<form id="login" method="post" action="https://ma3h1r0.github.io/404.html">
+			<div class="inform">
+			  <fieldset>
+					<legend>Enter your username and password below</legend>
+			  <div class="infldset">
+			    <label class="conl required"><strong> <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                </strong></label>
+			    <label class="conl required"><strong><br />
+			    <br />
+			    <br />
+	    <br />
+			    <br />
+						<br />
+				</strong></label>
+			    <p class="conl required"><strong>Username</strong><br />
+		          <input type="text" name="req_username2" value="" size="25" maxlength="25" tabindex="1" />
+		        </p>
+			    <strong>Password</strong>
+			    <p><span class="conl required">
+	              <input type="text" name="req_username22" value="" size="25" maxlength="25" tabindex="1" />
+	            </span></p>
+			    </div>
+				</fieldset>
+			</div>
+		    <p> 
+		      <script src="./login_files/api.js"></script>
+		      <input type="submit" name="login" value="Login" tabindex="4">
+		    </p>
+	      </form>
+	</div>
+</div>
+</div>
+
+<div id="brdfooter" class="block">
+	<div class="box">
+		<div class="inbox">
+			<p>MA3H1R0 2021</p>
+			<ul>
+				<li><span><a href="https://ma3h1r0.github.io/forums/index.html">Terms and Conditions / Privacy policy</a></span></li>
+			</ul>
+			<div class="clearer"></div>
+		</div>
+	</div>
+</div>
+
+</div>
 <div class="end-box"></div>
 </div>
+
 
 
 </body></html>
